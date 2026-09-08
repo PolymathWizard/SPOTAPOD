@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 FORBIDDEN = {"\u2014": "em dash", "\u2013": "en dash"}
-SCAN_SUFFIXES = {".md", ".yml", ".yaml", ".cff", ".txt"}
+SCAN_SUFFIXES = {".md", ".yml", ".yaml", ".cff", ".txt", ".html"}
 EXCLUDE_PARTS = {".git", "engagements", "site", "__pycache__"}
 
 

@@ -62,6 +62,16 @@ Each record carries five fields: `linkedinPostId`, `Content`, `AuthorPublicIdent
 
 Charts regenerate from the source file via [figures/generate_figures.py](figures/generate_figures.py) (matplotlib, BHIL brand tokens, drift-gated as derived artifacts). The two schema diagrams are authored SVG in the BHIL diagram register.
 
+## Interactive Explorer
+
+![SPOTAPOD Explorer](docs/figures/diagram-explorer.svg)
+
+[explorer/spotapod-explorer.html](explorer/spotapod-explorer.html) is a single offline HTML file that turns the dataset into a live analysis environment. Download the JSON from Dataverse, open the file in a desktop browser, and drop the data on it: the tool hashes the file in your browser against the published v1 SHA256 before analysis begins, and nothing ever leaves your machine.
+
+Global author and keyword filters drive every panel, and any author identifier in any table or chart is click-to-focus. Panels: overview data-quality stats, a likes-against-views log-log scatter with the likes-equal-views impossibility line and the median-ratio line of the current view, likes distribution, a ratio lab where the anomaly threshold and minimum-Views floor are sliders (thresholds are parameters, not verdicts), a decoded timeline, top 20 authors by records and top 20 posts by likes in view, per-author aggregates, cross-account duplicate content clusters, and a record browser.
+
+The posture ships in the pixels: every panel carries its evidence tier chip, the STATED population label is pinned in the status bar for the whole session, and an empty flag table reports INCONCLUSIVE rather than certifying anything. Full guide: [docs/explorer.md](docs/explorer.md).
+
 ## Start here
 
 | You want to | Go to |
@@ -71,6 +81,7 @@ Charts regenerate from the source file via [figures/generate_figures.py](figures
 | Find research questions worth asking | [Research questions](docs/research-questions.md) |
 | See who this data is useful for | [Use cases](docs/use-cases.md) |
 | Run the analysis yourself | [analysis/](analysis/) (stdlib-only Python, no dependencies) |
+| Explore interactively in a browser | [explorer/spotapod-explorer.html](explorer/spotapod-explorer.html), offline single file, checksum-gated ([guide](docs/explorer.md)) |
 | Dispute a record about you | [Corrections](docs/corrections.md) |
 | Quick answers | [FAQ](docs/faq.md) |
 
