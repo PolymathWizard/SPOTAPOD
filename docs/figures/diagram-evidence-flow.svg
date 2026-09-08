@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="IBM Plex Mono, monospace">
+  <rect width="960" height="620" fill="#FFFFFF"/>
+  <text x="40" y="52" fill="#1C1C2E" font-size="24" font-weight="bold" font-family="IBM Plex Sans, sans-serif">Observation Is Not Classification</text>
+  <text x="40" y="76" fill="#6B7280" font-size="12">how a record in the file becomes (or fails to become) a research claim</text>
+
+  <!-- Stage 1: record -->
+  <rect x="40" y="104" width="270" height="128" fill="#E8EEFF"/>
+  <text x="58" y="132" fill="#0F2F8A" font-size="14" font-weight="bold">RECORD IN FILE</text>
+  <text x="58" y="156" fill="#1C1C2E" font-size="11">linkedinPostId: 7013188...</text>
+  <text x="58" y="174" fill="#1C1C2E" font-size="11">Likes: 88,028</text>
+  <text x="58" y="192" fill="#1C1C2E" font-size="11">Views: 0</text>
+  <text x="58" y="216" fill="#1B4FD8" font-size="11" font-weight="bold">tier: VERIFIED (in the file)</text>
+
+  <path d="M 310 168 L 356 168" stroke="#1B4FD8" stroke-width="2"/>
+  <path d="M 348 162 L 358 168 L 348 174" fill="none" stroke="#1B4FD8" stroke-width="2"/>
+
+  <!-- Stage 2: analysis flag -->
+  <rect x="360" y="104" width="270" height="128" fill="#1B4FD8"/>
+  <text x="378" y="132" fill="#FFFFFF" font-size="14" font-weight="bold">STATISTICAL FLAG</text>
+  <text x="378" y="156" fill="#E8EEFF" font-size="11">ratio anomaly, duplicate cluster,</text>
+  <text x="378" y="174" fill="#E8EEFF" font-size="11">volume concentration, burst timing</text>
+  <text x="378" y="192" fill="#E8EEFF" font-size="11">threshold is a parameter, not a verdict</text>
+  <text x="378" y="216" fill="#FFFFFF" font-size="11" font-weight="bold">tier: VERIFIED (the flag itself)</text>
+
+  <path d="M 630 168 L 676 168" stroke="#1B4FD8" stroke-width="2"/>
+  <path d="M 668 162 L 678 168 L 668 174" fill="none" stroke="#1B4FD8" stroke-width="2"/>
+
+  <!-- Stage 3: interpretation -->
+  <rect x="680" y="104" width="240" height="128" fill="#0F2F8A"/>
+  <text x="698" y="132" fill="#FFFFFF" font-size="14" font-weight="bold">INTERPRETATION</text>
+  <text x="698" y="156" fill="#E8EEFF" font-size="11">"consistent with coordination"</text>
+  <text x="698" y="174" fill="#E8EEFF" font-size="11">requires converging evidence</text>
+  <text x="698" y="192" fill="#E8EEFF" font-size="11">and documented reasoning</text>
+  <text x="698" y="216" fill="#6B9EFF" font-size="11" font-weight="bold">tier: INFERENCE at best</text>
+
+  <!-- The wall -->
+  <rect x="40" y="268" width="880" height="4" fill="#1C1C2E"/>
+  <text x="40" y="298" fill="#1C1C2E" font-size="14" font-weight="bold">THE WALL: what never crosses it</text>
+
+  <rect x="40" y="316" width="424" height="120" fill="#FFFFFF" stroke="#1B4FD8" stroke-width="2"/>
+  <text x="58" y="344" fill="#0F2F8A" font-size="13" font-weight="bold">POPULATION LABEL</text>
+  <text x="58" y="368" fill="#1C1C2E" font-size="11">"these accounts used pod tooling"</text>
+  <text x="58" y="386" fill="#1C1C2E" font-size="11">rests on the depositor's collection process,</text>
+  <text x="58" y="404" fill="#1C1C2E" font-size="11">not re-derivable from the published fields</text>
+  <text x="58" y="424" fill="#1B4FD8" font-size="11" font-weight="bold">tier: STATED, and it stays STATED</text>
+
+  <rect x="496" y="316" width="424" height="120" fill="#FFFFFF" stroke="#1B4FD8" stroke-width="2"/>
+  <text x="514" y="344" fill="#0F2F8A" font-size="13" font-weight="bold">PER-PERSON VERDICT</text>
+  <text x="514" y="368" fill="#1C1C2E" font-size="11">guilt: a legal question, out of scope for JSON</text>
+  <text x="514" y="386" fill="#1C1C2E" font-size="11">innocence: absence of anomaly is</text>
+  <text x="514" y="404" fill="#1C1C2E" font-size="11">reported INCONCLUSIVE, never CLEAN</text>
+  <text x="514" y="424" fill="#1B4FD8" font-size="11" font-weight="bold">tier: not issued by any component</text>
+
+  <!-- Tier ladder -->
+  <text x="40" y="480" fill="#1C1C2E" font-size="14" font-weight="bold">EVIDENCE TIERS, EVERY CLAIM, INLINE</text>
+  <rect x="40" y="496" width="168" height="40" fill="#1B4FD8"/>
+  <text x="58" y="521" fill="#FFFFFF" font-size="12" font-weight="bold">VERIFIED</text>
+  <rect x="216" y="496" width="168" height="40" fill="#0F2F8A"/>
+  <text x="234" y="521" fill="#FFFFFF" font-size="12" font-weight="bold">CORROBORATED</text>
+  <rect x="392" y="496" width="168" height="40" fill="#6B9EFF"/>
+  <text x="410" y="521" fill="#1C1C2E" font-size="12" font-weight="bold">STATED</text>
+  <rect x="568" y="496" width="168" height="40" fill="#E8EEFF"/>
+  <text x="586" y="521" fill="#0F2F8A" font-size="12" font-weight="bold">UNCORROBORATED</text>
+  <rect x="744" y="496" width="176" height="40" fill="#FFFFFF" stroke="#1B4FD8" stroke-width="2"/>
+  <text x="762" y="521" fill="#0F2F8A" font-size="12" font-weight="bold">INFERENCE</text>
+
+  <text x="40" y="576" fill="#6B7280" font-size="11">the central discipline: within-file patterns are reproducible, the population definition is not, and no analysis may silently upgrade it</text>
+  <text x="40" y="602" fill="#1C1C2E" font-size="12" font-weight="bold">Barry Hurd Intelligence Lab  |  Human-Directed. AI-Enabled. Commercially Tested.</text>
+</svg>

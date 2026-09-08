@@ -43,6 +43,25 @@ Each record carries five fields: `linkedinPostId`, `Content`, `AuthorPublicIdent
 - 26,098 records share identical non-empty text with at least one other record; the single word "Agree?" appears 3,918 times (VERIFIED)
 - The full generated profile is in [docs/baseline-profile.md](baseline-profile.md)
 
+
+## Visuals
+
+![Publication architecture](figures/diagram-architecture.svg)
+
+![Observation is not classification](figures/diagram-evidence-flow.svg)
+
+![Likes distribution](figures/fig1-likes-distribution.png)
+
+![Author concentration](figures/fig2-author-concentration.png)
+
+![Posts by decoded year](figures/fig3-posts-by-year.png)
+
+![Like-to-view ratio](figures/fig4-ratio-distribution.png)
+
+![Field completeness](figures/fig5-field-completeness.png)
+
+Charts regenerate from the source file via [figures/generate_figures.py](https://github.com/PolymathWizard/SPOTAPOD/blob/main/figures/generate_figures.py) (matplotlib, BHIL brand tokens, drift-gated as derived artifacts). The two schema diagrams are authored SVG in the BHIL diagram register.
+
 ## Start here
 
 | You want to | Go to |

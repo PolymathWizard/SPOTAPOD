@@ -2,6 +2,11 @@
   "source_file": "podawaa2024_fixed.json",
   "source_sha256": "2d64e4b274c1b238399a6b1d578b951cac9d5035a980ab70d4c3d66efffb4214",
   "derived": {
-    "docs/baseline-profile.md": "6ae89dc238bd01720422b9ed932adabe611636f3484805eeffc063d256b52158"
+    "docs/baseline-profile.md": "6ae89dc238bd01720422b9ed932adabe611636f3484805eeffc063d256b52158",
+    "docs/figures/fig1-likes-distribution.png": "17e038bbf0dccd0e28259ceef7fc1b10affe93eda1bcb9e976663148938a543f",
+    "docs/figures/fig2-author-concentration.png": "9f671ea5a49ab340aa3240aaae2c124670ea4d5fa3fc9ba710b074826f61ccc9",
+    "docs/figures/fig3-posts-by-year.png": "a11440af2bdfcfbd9a0f60f2b099f30b141656368e86f7e9c8a63440bd2fd950",
+    "docs/figures/fig4-ratio-distribution.png": "b1d8e03c40e8f006f1c75305acdbe06341b5aefc477b77ba3b18d3954ed3e0c2",
+    "docs/figures/fig5-field-completeness.png": "b8cd2dab0c597e63b6015d4ef6ce141a4115a587ce3163e3543e0883939bcc4f"
   }
 }
