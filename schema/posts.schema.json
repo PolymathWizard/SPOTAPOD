@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/PolymathWizard/SPOTAPOD/schema/posts.schema.json",
+  "title": "SPOTAPOD post record file",
+  "type": "object",
+  "required": ["Posts"],
+  "properties": {
+    "Posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["Content", "Likes", "Views"],
+        "properties": {
+          "linkedinPostId": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "LinkedIn activity ID. Upper 41 bits encode a millisecond timestamp (INFERENCE when decoded). Key is absent in 3,364 v1 records."
+          },
+          "Content": {
+            "type": "string",
+            "maxLength": 3000,
+            "description": "Post text as captured. May contain platform placeholder strings; see data dictionary."
+          },
+          "AuthorPublicIdentifier": {
+            "type": ["string", "null"],
+            "description": "Public profile slug of the posting account. Personal data; see ethics statement. Null in 23,894 v1 records."
+          },
+          "Likes": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Reaction count at observation time."
+          },
+          "Views": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "View count at observation time. Zero usually means not captured; treat as missing."
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

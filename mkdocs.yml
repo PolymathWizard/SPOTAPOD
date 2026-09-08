@@ -1,0 +1,30 @@
+site_name: SPOTAPOD
+site_description: Companion research repository for the SPOTAPOD engagement-pod dataset
+repo_url: https://github.com/PolymathWizard/SPOTAPOD
+theme:
+  name: material
+  palette:
+    primary: custom
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+extra_css:
+  - stylesheets/bhil.css
+nav:
+  - Home: index.md
+  - Method: method.md
+  - Data Dictionary: data-dictionary.md
+  - Baseline Profile: baseline-profile.md
+  - Limitations: limitations.md
+  - Ethics: ethics.md
+  - Research Questions: research-questions.md
+  - Use Cases: use-cases.md
+  - FAQ: faq.md
+  - Corrections: corrections.md
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+plugins:
+  - search

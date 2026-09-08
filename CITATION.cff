@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "Cite the dataset by its Dataverse DOI and this repository for methodology and tooling."
+title: "SPOTAPOD Companion Research Repository"
+type: software
+authors:
+  - family-names: Hurd
+    given-names: Barry
+    affiliation: Barry Hurd Intelligence Lab
+repository-code: "https://github.com/PolymathWizard/SPOTAPOD"
+license: MIT
+version: 1.0.0
+date-released: 2026-09-08
+references:
+  - type: dataset
+    title: "LinkedIn posts using fake socials"
+    authors:
+      - family-names: Hall
+        given-names: Daniel
+    doi: 10.7910/DVN/WD9AUR
+    year: 2026
+    publisher:
+      name: Harvard Dataverse

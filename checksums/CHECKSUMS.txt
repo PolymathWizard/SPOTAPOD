@@ -1,0 +1,4 @@
+# SPOTAPOD dataset release checksums
+# Verify with: sha256sum -c CHECKSUMS.txt (after placing files alongside)
+# Dataset v1, Harvard Dataverse doi:10.7910/DVN/WD9AUR
+2d64e4b274c1b238399a6b1d578b951cac9d5035a980ab70d4c3d66efffb4214  podawaa2024_fixed.json
